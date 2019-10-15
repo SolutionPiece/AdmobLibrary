@@ -14,6 +14,7 @@ import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.gms.ads.AdLoader;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.formats.UnifiedNativeAd;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
@@ -21,15 +22,18 @@ import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 public class MainActivity extends AppCompatActivity {
 
     AdView adView;
+    InterstitialAd mInterstitialAd;
     AdLoader adLoader;
     RewardedAd rewardedAd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AdsUtility.InterstitialAdmob(MainActivity.this,getResources().getString(R.string.interstecial_id), false);
+        mInterstitialAd = new InterstitialAd(MainActivity.this);
+        AdsUtility.InterstitialAdmob(mInterstitialAd,getResources().getString(R.string.interstecial_id));
 
 
         Button btnShowRewarded = (Button) findViewById(R.id.btnShowRewarded);
@@ -45,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         btnShowInterstitial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AdsUtility.showIntestitialAds();
+                AdsUtility.showIntestitialAds(mInterstitialAd);
             }
         });
 
