@@ -88,23 +88,13 @@ public class AdsUtility {
 
     public static void InterstitialAdmob(final InterstitialAd mInterstitialAd, String Interstitial) {
         mInterstitialAd.setAdUnitId(Interstitial);
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-
-            }
-        });
-    }
-
-    protected static void requestNewInterstitial(InterstitialAd mInterstitialAd) {
         AdRequest adRequest = new AdRequest.Builder().build();
         mInterstitialAd.loadAd(adRequest);
     }
 
+
     public static void showIntestitialAds(InterstitialAd mInterstitialAd) {
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        }
+        mInterstitialAd.show();
     }
 
 
