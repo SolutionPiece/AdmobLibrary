@@ -25,7 +25,6 @@
           android:id="@+id/media_view"
           android:layout_width="match_parent"
           android:layout_height="160dp"
-
           />
 
 
@@ -65,7 +64,7 @@
                 android:textSize="@dimen/gnt_text_size_large"
                 android:textColor="@color/gnt_gray"
                 android:lines="1"
-                android:text="sdfasfdasfdad"
+                android:text="primary"
                 android:layout_height="wrap_content"
                 android:padding="4dp"
                 android:layout_width="match_parent"
@@ -116,7 +115,7 @@
                 android:lines="1"
                 android:paddingLeft="10dp"
                 android:inputType="textCapWords"
-                android:text="Free"
+                android:text="secondary"
                 />
 
           </LinearLayout>
@@ -128,14 +127,14 @@
       </LinearLayout>
 
       <TextView
+          android:id="@+id/body"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:id="@+id/body"
           android:padding="5dp"
           android:gravity="center"
           android:maxLines="2"
           android:ellipsize="end"
-          android:text="dfasdfasfdasdf"
+          android:text="body"
           />
       <Button
           android:id="@+id/cta"

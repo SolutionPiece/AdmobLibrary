@@ -62,7 +62,7 @@
                             android:textSize="12dp"
                             android:textColor="@color/gnt_gray"
                             android:lines="1"
-                            android:text="sdfasfdasfdad"
+                            android:text="primary"
                             android:layout_height="wrap_content"
                             android:paddingLeft="4dp"
                             android:layout_width="match_parent"
@@ -116,7 +116,7 @@
                             android:ellipsize="end"
                             android:paddingLeft="5dp"
                             android:inputType="textCapWords"
-                            android:text="Free"
+                            android:text="secondary"
                             />
 
                     </LinearLayout>
@@ -142,7 +142,7 @@
                    android:gravity="center|left"
                    android:maxLines="2"
                    android:ellipsize="end"
-                   android:text="safasdfasdf\n sdfsdf"
+                   android:text="body"
                    android:textSize="13dp"
                    />
                <Button
