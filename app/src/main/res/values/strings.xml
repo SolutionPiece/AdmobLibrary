@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AdmobLibrary</string>
+
+    <!--testing-->
+    <string name="app_id">ca-app-pub-1843418144252392~4590136454</string>
+    <string name="banners_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstecial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_ads">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="rewarded_id">ca-app-pub-3940256099942544/5224354917</string>
+
+
+</resources>
+
+
